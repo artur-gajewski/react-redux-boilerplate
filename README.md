@@ -1,39 +1,16 @@
 # Hardcore React Training Broilerplate
 
-## Introduction
-
-Welcome, friend, to my two-day hardcore React Workshop v1. You'll grow some real bones instead of the backbone.js (pun intended, even though the joke is getting old)
-your rib cage is attached to now.
-
-This repo also currently acts as a starter project for my [broilerplate](https://github.com/pekkis/broilerplate)
-to kickstart a React project with sane defaults, necessary tooling and reusable, copy-paste-preventing stuff. It's exactly the same kit I build my own stuff on.
-
-I recommend, though, to check out the [create-react-app](https://github.com/facebookincubator/create-react-app) boilerplate
-instead of my broilerplate. If it suits you, you might want to use it. Personally, I think it's inadequate. and do not agree with it's philosophy.
-You always have to eject, and then you're on your own as here.
-
-With Broilerplate, I aim to get all the advantages and none of the disadvantages.
-Only future will tell whether this is sane.
-
-## Branches
-
-The `master` branch contains a fuller example application. `training` is empty.
+Boilerplate to start your next project with React.
 
 Use as you wish, but still read the license from LICENSE.
 
 ## Requirements
 
-- MacOS and Linux are grade A citizens. Should work in Windows too, but I don't
-  always test because I'm not a Windows man.
-- If it doesn't work, just use a Unix virtual machine.
+- MacOS or Linux. Windows not tested, but if it doesn't work, just use a Unix virtual machine.
 - The current version of Node.js (8.x). Might work on older ones, but no guarantees!
 - The [Yarn package manager](https://yarnpkg.com).
 
-## Training requirements
-
-- A good editor / IDE that supports our stuff in real-time. I use [Atom](https://atom.io/) (Atom)
-  myself because it's free and good!
-- Some alternatives: VSCode, Nuclide, WebStorm.
+## Development requirements
 
 If you decide to use Atom, install at least the following packages:
 
