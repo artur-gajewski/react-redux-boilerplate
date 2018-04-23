@@ -8,8 +8,7 @@ export default compose(
   withRouter,
   connect(
     state => ({
-      persons: state.person.get("persons"),
-      loading: state.ui.get("loading")
+      persons: state.person.get("persons")
     }),
     {
       getPersons,

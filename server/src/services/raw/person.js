@@ -23,9 +23,8 @@ const createPerson = () => {
   };
 };
 
-const persons = Range(1, 201)
+const persons = Range(0, 0)
   .map(createPerson)
-  //.map(augmentPerson)
   .toList();
 
 export default servicify(persons);

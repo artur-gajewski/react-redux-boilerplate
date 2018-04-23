@@ -5,11 +5,12 @@ import ImmutablePropTypes from "react-immutable-proptypes";
 const PersonList = props => {
   const { persons, ...rest } = props;
 
-  const avg = persons.reduce((r, p) => r + p.age, 0) / persons.count();
-
   return (
     <div>
-      <h3>Keski-ikä: {avg.toFixed(2)}</h3>
+      <h2>Users</h2>
+      {persons.size === 0 &&
+        <p>No users found</p>
+      }
       {persons.map(p => <Person key={p.id} person={p} {...rest} />)}
     </div>
   );

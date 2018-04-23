@@ -28,8 +28,9 @@ const PersonPage = props => {
     <NeedsPerson person={person}>
       {({ person }) => (
         <div>
+          <h1>User data</h1>
           <h2>
-            {person.lastName}, {person.firstName}
+            {person.firstName} {person.lastName}
           </h2>
         </div>
       )}

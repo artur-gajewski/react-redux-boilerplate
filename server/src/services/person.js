@@ -1,9 +1,9 @@
 import raw from "./raw/person.js";
-import { asyncronifyAll, slowify } from "./util";
+import { asyncronifyAll } from "./util";
 
 const persons = asyncronifyAll(raw);
 
 export default {
   ...persons,
-  remove: slowify(3000, 10000)(persons.remove)
+  remove: persons.remove
 };

@@ -10,16 +10,11 @@ import { Link } from "react-router-dom";
 const Person = props => {
   const { person, firePerson } = props;
 
-  const classes = cx(styles.person, {
-    [styles.male]: person.gender === "m",
-    [styles.female]: person.gender === "f"
-  });
-
   return (
-    <div className={classes}>
+    <div>
       <div>
         <Link to={`/person/${person.id}`}>
-          <strong>{person.lastName}</strong>, {person.firstName}
+          {person.firstName} {person.lastName}
         </Link>
       </div>
 
@@ -30,7 +25,7 @@ const Person = props => {
         block
         onClick={e => firePerson(person.id)}
       >
-        <Icon name="heart" /> {person.firing ? "vapauttamassa" : "vapauta"}
+        {person.firing ? "Removing..." : "Remove"}
       </Button>
     </div>
   );
@@ -42,7 +37,7 @@ Person.propTypes = {
 };
 
 Person.defaultProps = {
-  firePerson: () => {}
+  firePerson: () => { }
 };
 
 export default pure(Person);

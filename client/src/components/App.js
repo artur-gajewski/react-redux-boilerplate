@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.pcss";
-import Loading from "./Loading";
 import IndexPage from "./IndexPage";
 import PersonPage from "./PersonPage";
 import { Switch, Route } from "react-router";
@@ -22,7 +21,7 @@ class App extends React.PureComponent {
   }
 
   render() {
-    const { persons, loading, firePerson, hirePerson } = this.props;
+    const { persons, firePerson, hirePerson } = this.props;
     const { error } = this.state;
 
     if (error) {
@@ -31,10 +30,6 @@ class App extends React.PureComponent {
 
     return (
       <div>
-        {loading > 0 && <Loading />}
-
-        <h1>Fraktio Tussinaama ERP 15.0</h1>
-
         <Switch>
           <Route
             path="/"
