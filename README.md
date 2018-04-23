@@ -1,4 +1,4 @@
-# Hardcore React Training Broilerplate
+# React Redux Boilerplate with Ducks
 
 Boilerplate to start your next project with React.
 
