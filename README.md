@@ -22,7 +22,7 @@ If you decide to use Atom, install at least the following packages:
 
 ## Good to know
 
-If you want to try production mode, an [example configuration file](docs/nginx.conf) for Nginx is included. Or you can just deploy everything to CloudFront very easily.
+If you want to try production mode, an [example configuration file](client/docs/nginx.conf) for Nginx is included. Or you can just deploy everything to CloudFront very easily.
 
 ## Keywords and links
 
